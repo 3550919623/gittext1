@@ -1,0 +1,20 @@
+A景点1教学楼
+B景点2实验室
+C景点3田径场
+D景点4足球场
+E景点5篮球馆
+F景点6网球场
+G景点7歌剧院
+H景点8超市
+I景点9机房
+J景点10图书馆
+void readinmofation(attractionsset *set)
+{
+FILE *f = fopen("/Users/nifangqin/Desktop/景点浏览/spotinformation.txt","r");
+for(int i=0;i<10;i++)
+fscanf(f,"%c",&set->attractions[i].name);
+fclose(f);
+}
+for(int x=0;x<maxnum;x++)
+for(int y=0;y<maxnum;y++)
+{printf("%d ",p[x][y]);if(y==9) printf("\n");}
